@@ -1,0 +1,12 @@
+﻿@using  System.Configuration
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Environment: @Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")</p>
+    <p>
+        App Setting Test: @Environment.GetEnvironmentVariable("Test")
+    </p>
+</div>
